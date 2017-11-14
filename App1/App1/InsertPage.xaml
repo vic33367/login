@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.InsertPage"
+             BackgroundColor="#E8DAEF">
+    <ScrollView x:Name="layputScroll" >
+        <StackLayout Spacing="15" x:Name="layputContenedor" >
+            <Label x:Name="lblDatos"  Text="" />
+            <Label x:Name="lblDatos_Personales"  Text=" Datos Personales" FontSize="Large"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="50" />
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lblNombre" Text="Nombre:" FontSize="Medium" Grid.Row="0" Grid.Column="1" />
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Keyboard="Text" FontSize="Medium"  Grid.Row="0" Grid.Column="2" />
+                <Label x:Name="lblApellidos" Text="Apellidos:" FontSize="Medium"  Grid.Row="1" Grid.Column="1" />
+                <Entry x:Name="txtApellidos" Placeholder="Apellidos" Keyboard="Text" FontSize="Medium"  Grid.Row="1" Grid.Column="2" />
+                <Label x:Name="lblDireccion" Text="Direccion:" FontSize="Medium"  Grid.Row="2" Grid.Column="1" />
+                <Entry x:Name="txtDireecion" Placeholder="Direccion" Keyboard="Text" FontSize="Medium"  Grid.Row="2" Grid.Column="2" />
+                <Label x:Name="lblTelefono" Text="Telefono:"  FontSize="Medium"  Grid.Row="3" Grid.Column="1" />
+                <Entry x:Name="txtTelefono" Placeholder="Telefono" Keyboard="Telephone" FontSize="Medium"  Grid.Row="3" Grid.Column="2" />
+            </Grid>
+            <Label x:Name="lblDatos_Escolares" Text=" Datos Escolares" FontSize="Large"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="50" />
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lblCarrera" Text="Carrera:"  FontSize="Medium" Grid.Row="0" Grid.Column="1" />
+                <Entry x:Name="txtCarrera" Placeholder="Carrera" Keyboard="Text" FontSize="Medium"  Grid.Row="0" Grid.Column="2" />
+                <Label x:Name="lblSemestre" Text="Semestre:" FontSize="Medium"  Grid.Row="1" Grid.Column="1" />
+                <Entry x:Name="txtSemestre" Placeholder="Semestre" Keyboard="Text" FontSize="Medium"  Grid.Row="1" Grid.Column="2" />
+                <Label x:Name="lblMatricula" Text="Matricula:" FontSize="Medium"  Grid.Row="2" Grid.Column="1" />
+                <Entry x:Name="txtMatricula" Placeholder="Matricula" Keyboard="Numeric" FontSize="Medium"  Grid.Row="2" Grid.Column="2" />
+            </Grid>
+            <Label x:Name="lblDatos_Sociales" Text=" Datos Sociales" FontSize="Large"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="50" />
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lblCorreo" Text="Correo:"  FontSize="Medium" Grid.Row="0" Grid.Column="1" />
+                <Entry x:Name="txtCorreo" Placeholder="Correo" Keyboard="Email" FontSize="Medium"  Grid.Row="0" Grid.Column="2" />
+                <Label x:Name="lblGitHub" Text="GitHub:" FontSize="Medium"  Grid.Row="1" Grid.Column="1" />
+                <Entry x:Name="txtGitHub" Placeholder="GitHub" Keyboard="Email" FontSize="Medium"  Grid.Row="1" Grid.Column="2" />
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnObtener" Clicked="btnObtener_Clicked"  Text="Registrar" FontSize="Medium"  FontAttributes="Bold" BackgroundColor="#A9DFBF" FontFamily="MarkerFelt-Thin" BorderWidth="3" BorderRadius="5" BorderColor="#27AE60" Grid.Row="0" Grid.Column="1" />
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

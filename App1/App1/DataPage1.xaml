@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.DataPage1"
+               BackgroundColor="#E8DAEF">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding Items}" CachingStrategy="RecycleElement"  ItemSelected="Handle_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Label Text=" Id:" Grid.Column="0" Grid.Row="0" VerticalOptions="Center"/>
+                                <Entry x:Name="Entry_Id" Text="{Binding Id}" Grid.Column="1" Grid.Row="0"/>
+                                <Label Text=" Nombre" Grid.Column="0" Grid.Row="1" VerticalOptions="Center"/>
+                                <Entry x:Name="Entry_Nombre" Text="{Binding Nombre}" Grid.Column="1" Grid.Row="1"/>
+                                <Label Text=" Apellido" Grid.Column="0" Grid.Row="2" VerticalOptions="Center"/>
+                                <Entry x:Name="Entry_Apellido" Text="{Binding Apellido}" Grid.Column="1" Grid.Row="2"/>
+                                <Label Text=" Direccion" Grid.Column="0" Grid.Row="3" VerticalOptions="Center"/>
+                                <Entry x:Name="Entry_Direccion" Text="{Binding Direccion}" Grid.Column="1" Grid.Row="3"/>
+                                <Label Text=" Telefono" Grid.Column="0" Grid.Row="4" VerticalOptions="Center"/>
+                                <Entry x:Name="Entry_Telefono" Text="{Binding Telefono}" Grid.Column="1" Grid.Row="4"/>
+                                <Label Text=" Carrera" Grid.Column="0" Grid.Row="5" VerticalOptions="Center"/>
+                                <Entry x:Name="Entry_Carrera" Text="{Binding Carrera}" Grid.Column="1" Grid.Row="5"/>
+                                <Label Text=" Semestre" Grid.Column="0" Grid.Row="6" VerticalOptions="Center"/>
+                                <Entry x:Name="Entry_Semestre" Text="{Binding Semestre}" Grid.Column="1" Grid.Row="6"/>
+                                <Label Text=" Correo" Grid.Column="0" Grid.Row="7" VerticalOptions="Center"/>
+                                <Entry x:Name="Entry_Correo" Text="{Binding Correo}" Grid.Column="1" Grid.Row="7"/>
+                                <Label Text=" Github" Grid.Column="0" Grid.Row="8" VerticalOptions="Center"/>
+                                <Entry x:Name="Entry_Github" Text="{Binding Github}" Grid.Column="1" Grid.Row="8"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="Button_Insertar" Text="Ir a Formulario" Clicked="Button_Insertar_Clicked" FontSize="Medium"  FontAttributes="Bold" BackgroundColor="#EDBB99" FontFamily="MarkerFelt-Thin" BorderWidth="3" BorderRadius="5" BorderColor="#D35400"/>
+            <Button x:Name="btnEliminados" Text="Registros Eliminados" Clicked="btnEliminados_Clicked" FontSize="Medium"  FontAttributes="Bold" BackgroundColor="#A9DFBF" FontFamily="MarkerFelt-Thin" BorderWidth="3" BorderRadius="5" BorderColor="#27AE60"/>
+            <Label Text="  "/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

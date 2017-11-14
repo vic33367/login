@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.DataPage"
+              BackgroundColor="#E8DAEF">
+            <StackLayout>            
+            <Button x:Name="btnLogin" Text="Ingresar" Clicked="btnLogin_Clicked" FontSize="Medium"  FontAttributes="Bold" BackgroundColor="#A9DFBF" FontFamily="MarkerFelt-Thin" BorderWidth="3" BorderRadius="5" BorderColor="#27AE60"/>            
+            <Label Text="  "/>
+        </StackLayout>   
+    
+</ContentPage>
